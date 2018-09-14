@@ -41,7 +41,7 @@ class SetTimerCommand extends commando.Command{
                         return;
                     }
                     else{
-                        message.reply(reminder);
+                        message.reply(reminder,{tts: true});
                     }
                 }
                 
