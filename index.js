@@ -43,7 +43,7 @@ bot.on("presenceUpdate", (oldMember, newMember) => {
                     function repeat(mess){
                         if(newMember.presence.status !='dnd'){
                             if(newMember.presence.status !="offline"){
-                                channel.send("<@"+user+"> "+ mess);
+                                channel.send("<@"+user+"> "+ mess ,{tts: true});
                             }
                             else{
                                 return
