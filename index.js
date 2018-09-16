@@ -25,7 +25,7 @@ bot.on('message',function(message){
 bot.on('ready',function(message){
     console.log('ready');
     var myChannel = bot.channels.find("id","489951319830954005");
-    channel.send("I have been reset!");
+    myChannel.send("I have been reset!");
 });
 
 bot.on("presenceUpdate", (oldMember, newMember) => {
