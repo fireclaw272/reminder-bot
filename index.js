@@ -12,8 +12,7 @@ bot.registry.registerCommandsIn(__dirname + '/commands');
 
 bot.on('message',function(message){
     if(message.content == "Hello"){
-        message.reply('Hello person');
-        message.channel.send("Hello, "+message.author+" how are you?");
+        message.reply('Hello person, how are you?');
     }
     if(message.content == "Start"){
     }
@@ -25,6 +24,8 @@ bot.on('message',function(message){
 
 bot.on('ready',function(message){
     console.log('ready');
+    var myChannel = bot.channels.find("id","489951319830954005");
+    channel.send("I have been reset!");
 });
 
 bot.on("presenceUpdate", (oldMember, newMember) => {
